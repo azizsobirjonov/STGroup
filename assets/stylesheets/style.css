@@ -1753,6 +1753,12 @@ hr {
 	object-fit:cover;
 }
 
+.flex-center{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	margin-block: 10px;
+}
 .product-description{
 	padding: 20px;
 }
