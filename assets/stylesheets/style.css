@@ -362,7 +362,7 @@ h5 {
 
 .section-title {
 	text-align: center;
-	margin-bottom: 75px;
+	margin-bottom: 25px;
 }
 
 .section-title h5 {
@@ -418,6 +418,7 @@ h5 {
 	visibility: hidden;
 	-webkit-transition: .9s;
 	transition: .9s;
+	border-radius:8px;
 }
 
 .back-to-top:before {
@@ -503,6 +504,53 @@ h5 {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+}
+
+.car-name{
+	font-size:16px;
+	color:#000;
+	font-weight:500;
+	padding-top: 10px;
+}
+
+.phone-inputs{
+	display:flex;
+	align-items:center;
+	border: 2px solid #c00113;
+	margin-bottom:1px;
+}
+
+.phone-default{
+	width:65px !important;
+	border:none !important;
+	min-height:52.5px !important;
+	padding-right:10px !important;
+}
+
+.messages{
+	position: fixed;
+	top:100px;
+	right:10px;
+	z-index:2000;
+}
+
+.phone-number {
+	width:calc(100%-65px) !important;
+	border: none !important;
+	min-height:52.5px !important;
+	padding-left:0px !important;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 /* [ Start Overlay ] */
@@ -895,8 +943,8 @@ h5 {
 .navbar-b.navbar-reduce {
 	transition: all .5s ease-in-out;
 	background-color: #fff;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	/* padding-top: 15px;
+	padding-bottom: 15px; */
 	-webkit-animation: 500ms ease-in-out 0s normal fadeInDown;
 	animation: 500ms ease-in-out 0s normal fadeInDown;
 	-webkit-transition: 0.6s;
@@ -972,7 +1020,7 @@ h5 {
 .navbar-toggler {
 	position: absolute;
 	right: 13px;
-    top: 28px;
+    /* top: 28px; */
 }
 
 .navbar-toggler:focus,
@@ -1701,6 +1749,8 @@ hr {
 
 .product-image {
 	border-radius: 2px;
+	height:280px;
+	object-fit:cover;
 }
 
 .product-description{
@@ -2805,6 +2855,11 @@ hr {
 	border-radius: 2px;
 }
 
+.my-navbar{
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
 /**************************************
  * Press Section Style
  *************************************/
@@ -2911,6 +2966,13 @@ hr {
 	border-bottom: 3px solid #c00113;
 }
 
+.border-md {
+	border-radius:5px !important;
+}
+.border-sm {
+	border-radius:3px !important;
+}
+
 .contact-box form .button {
 	display: block;
 	font-size: 16px;
@@ -2961,6 +3023,10 @@ input,
 textarea {
 	color: #505050;
 }
+
+.form-group.has-error input {
+	color: red;
+  }
 
 button,
 input,
