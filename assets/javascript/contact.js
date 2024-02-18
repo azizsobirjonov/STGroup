@@ -12,10 +12,8 @@ window.addEventListener("load", (e) => {
     const username = document.querySelector("#name");
     const phoneNumber = document.querySelector("#phone");
     const alert = document.querySelector("#msgSubmit");
-    const token = "5918812353:AAGCeaYgq5BN4HAMI_-r5fb2OX2j0dd5h94";
-    const chat_id = -4110434081;
-    // const token = "6731341139:AAE9BGGDWZi7njyv41E28FLpYEJ-tEgSdk0";
-    // const chat_id = -4136167768;
+    const token = "6731341139:AAE9BGGDWZi7njyv41E28FLpYEJ-tEgSdk0";
+    const chat_id = -4136167768;
 
     function complateFunc() {
         alert.classList.remove('hidden')
